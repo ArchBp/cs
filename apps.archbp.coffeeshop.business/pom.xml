@@ -9,7 +9,7 @@
 
   <groupId>apps.archbp.coffeshop</groupId>
   <artifactId>apps.archbp.coffeeshop.business</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
 
   <name>apps.archbp.coffeeshop.business</name>
   <!-- FIXME change it to the project's website -->
