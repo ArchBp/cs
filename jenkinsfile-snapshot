@@ -8,10 +8,6 @@ node {
             checkout scm
         }
 
-        stage('Tests unitaires'){
-            sh "mvn test"
-        }
-
         stage("SonarQube analysis") {
             node {
                 withSonarQubeEnv('sonar-1') {
