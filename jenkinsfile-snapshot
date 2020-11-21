@@ -12,7 +12,7 @@ node {
             node {
                 withSonarQubeEnv('sonar-1') {
                     sh "pwd";
-                    sh "mvn sonarqube";
+                    sh "mvn clean package sonar:sonar";
                 }
             }
         }
