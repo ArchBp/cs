@@ -12,10 +12,10 @@ node {
             sh "mvn test"
         }
 
-        stage("build & SonarQube analysis") {
+        stage("SonarQube analysis") {
             node {
                 withSonarQubeEnv('sonar-1') {
-                    sh 'mvn sonar:sonar'
+                    sh "mvn sonar:sonar"
                 }
             }
         }
