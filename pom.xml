@@ -17,10 +17,4 @@
     <module>apps.archbp.coffeeshop.persistance</module>
   </modules>
 
-<dependencyManagement>
-<dependencies>
-	
-</dependencies>
-</dependencyManagement>
-
 </project>
