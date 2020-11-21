@@ -15,6 +15,7 @@ node {
         stage("SonarQube analysis") {
             node {
                 withSonarQubeEnv('sonar-1') {
+                    sh "ls"
                     sh "mvn sonarqube"
                 }
             }
