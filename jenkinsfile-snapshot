@@ -7,14 +7,12 @@ node {
         stage('Preparation'){
             checkout scm
         }
-
+// simple projet mavn monomodule
         stage("SonarQube analysis") {
-            node {
                 withSonarQubeEnv('sonar-1') {
                     sh "pwd";
                     sh "mvn clean package sonar:sonar";
                 }
-            }
         }
 
         stage("Quality Gate"){
