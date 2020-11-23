@@ -14,7 +14,7 @@ node {
 
         stage("SonarQube analysis") {
             withSonarQubeEnv('sonar-1') {
-                sh "mvn clean package sonar:sonar";
+                sh "mvn sonar:sonar";
             }
         }
 
@@ -26,6 +26,11 @@ node {
                 }
             }
         }
+
+        stage('Build'){
+            sh "mvn install"
+        }
+
     }catch(e){
         throw e
     }
